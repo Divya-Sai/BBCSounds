@@ -10,6 +10,7 @@ import io.cucumber.junit.Cucumber;
         plugin = { "pretty", "html:test-output", "json:target/cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         dryRun = false,
+        strict = true,
         monochrome = true
 )
 

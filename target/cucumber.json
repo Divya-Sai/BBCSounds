@@ -1,0 +1,327 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4205000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the BBC Sounds Homepage",
+            "match": {
+              "location": "stepDefinitions.steps.i_am_on_the_BBC_Sounds_Homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-12T18:28:41.045Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Radio 1 and Radio 2 logos are displayed in the Listen Live module on the Sounds Homepage",
+        "description": "",
+        "id": "sounds-homepage;radio-1-and-radio-2-logos-are-displayed-in-the-listen-live-module-on-the-sounds-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 9820000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6886000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I select the \"Home\" logo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.steps.i_select_the_logo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the Sounds Homepage",
+            "match": {
+              "location": "stepDefinitions.steps.i_am_on_the_Sounds_Homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 498000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I can see the Radio1 logo",
+            "match": {
+              "location": "stepDefinitions.steps.i_can_see_the_Radio1_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 397000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I can see the Radio2 logo",
+            "match": {
+              "location": "stepDefinitions.steps.i_can_see_the_Radio2_logo()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5792000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the BBC Sounds Homepage",
+            "match": {
+              "location": "stepDefinitions.steps.i_am_on_the_BBC_Sounds_Homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-12T18:29:13.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6944000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify network station logos are displayed on the Stations page",
+        "description": "",
+        "id": "sounds-homepage;verify-network-station-logos-are-displayed-on-the-stations-page",
+        "after": [
+          {
+            "result": {
+              "duration": 6482000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_click_the_link(steps.java:75)\r\n\tat ✽.I click the \"View all Sations \u0026 Schedules\" link(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:13)\r\n",
+              "duration": 762000000,
+              "status": "pending"
+            },
+            "line": 13,
+            "name": "I click the \"View all Sations \u0026 Schedules\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View all Sations \u0026 Schedules\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.steps.i_click_the_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I am on the \"Stations\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stations\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.steps.i_am_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I see 26 network station logos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "26",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.steps.i_see_network_station_logos(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3467000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the BBC Sounds Homepage",
+            "match": {
+              "location": "stepDefinitions.steps.i_am_on_the_BBC_Sounds_Homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-12T18:29:34.218Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2236000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Selecting the Hip Hop category from the Categories module on the Sounds Homepage",
+        "description": "",
+        "id": "sounds-homepage;selecting-the-hip-hop-category-from-the-categories-module-on-the-sounds-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 5782000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.steps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category(steps.java:91)\r\n\tat ✽.I select Hip Hop,RnB \u0026 Dancehall Category(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:18)\r\n",
+              "duration": 10000000,
+              "status": "pending"
+            },
+            "line": 18,
+            "name": "I select Hip Hop,RnB \u0026 Dancehall Category",
+            "match": {
+              "location": "stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I am on \"Hip Hop,RnB \u0026 Dancehall\" Category page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hip Hop,RnB \u0026 Dancehall\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.steps.i_am_on_Category_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I see the Category page is sorted by popular",
+            "match": {
+              "location": "stepDefinitions.steps.i_see_the_Category_page_is_sorted_by_popular()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sounds Homepage",
+    "description": "",
+    "id": "sounds-homepage",
+    "keyword": "Feature",
+    "uri": "file:features/SoundsHomePage.feature",
+    "tags": []
+  }
+]
