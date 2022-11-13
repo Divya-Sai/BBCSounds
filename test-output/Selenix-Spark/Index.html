@@ -58,7 +58,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Nov 12, 2022 06:28:40 PM</span>
+                    <span class="badge badge-primary">Nov 13, 2022 12:46:50 PM</span>
                 </a>
             </li>
         </ul>
@@ -74,15 +74,7 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -115,7 +107,7 @@
 						
 						
 						
-						<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
+						
 						<div class="dropdown-divider"></div>
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
@@ -124,28 +116,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="skip" test-id="1"
+				<li class="test-item"  status="pass" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar skip-bg">
-						<i class="fa fa-long-arrow-right text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Sounds Homepage</p>
-							<p class="duration text-sm">0h 0m 48s+524ms</p>
-							<span class="datetime">18:28:51 PM</span>
+							<p class="duration text-sm">0h 0m 56s+716ms</p>
+							<span class="datetime">12:47:01 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-skip">Sounds Homepage</h5>
-									<span class='badge badge-success'>11.12.2022 18:28:51</span>
-									<span class='badge badge-danger'>11.12.2022 18:29:39</span>
-									<span class='badge badge-default'>0h 0m 48s+524ms</span>
+									<h5 class="test-status text-pass">Sounds Homepage</h5>
+									<span class='badge badge-success'>11.13.2022 12:47:01</span>
+									<span class='badge badge-danger'>11.13.2022 12:47:58</span>
+									<span class='badge badge-default'>0h 0m 56s+716ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -207,8 +199,8 @@
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">Verify network station logos are displayed on the Stations page</div>
-				<div class="status-avatar float-left skip-bg">
-					<i class="fa fa-long-arrow-right text-white"></i>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
 				</div>
 			</div>
 		</div>
@@ -221,30 +213,27 @@
 								<span>Given I am on the BBC Sounds Homepage</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="stepDefinitions.steps.i_click_the_link(java.lang.String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+							<div class="d-flex align-items-center justify-content-start when" title="stepDefinitions.steps.i_click_the_link()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When I click the "View all Sations & Schedules" link</span>
+								<span>When I click the View all Sations & Schedules link</span>
 							</div>
-				<textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
-	at stepDefinitions.steps.i_click_the_link(steps.java:75)
-	at ✽.I click the "View all Sations & Schedules" link(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:13)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start then" title="stepDefinitions.steps.i_am_on_the_page(java.lang.String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="stepDefinitions.steps.i_am_on_the_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Then I am on the "Stations" page</span>
+								<span>Then I am on the Stations page</span>
 							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start and" title="stepDefinitions.steps.i_see_network_station_logos(java.lang.Integer)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="stepDefinitions.steps.i_see_network_station_logos()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>And I see 26 network station logos</span>
+								<span>And I see 26network station logos</span>
 							</div>
-				<div class="details">Step skipped</div>
+				<div class="details"></div>
 					</div>
 				</div>
 	</div>
@@ -252,8 +241,8 @@
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">Selecting the Hip Hop category from the Categories module on the Sounds Homepage</div>
-				<div class="status-avatar float-left skip-bg">
-					<i class="fa fa-long-arrow-right text-white"></i>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
 				</div>
 			</div>
 		</div>
@@ -267,122 +256,30 @@
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start when" title="stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>When I select Hip Hop,RnB & Dancehall Category</span>
 							</div>
-				<textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
-	at stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category(steps.java:91)
-	at ✽.I select Hip Hop,RnB & Dancehall Category(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:18)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start then" title="stepDefinitions.steps.i_am_on_Category_page(java.lang.String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="stepDefinitions.steps.hiphopdancepage()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Then I am on "Hip Hop,RnB & Dancehall" Category page</span>
+								<span>Then I am on Hip Hop,RnB & Dancehal Category page</span>
 							</div>
-				<div class="details">Step skipped</div>
+				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start and" title="stepDefinitions.steps.i_see_the_Category_page_is_sorted_by_popular()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>And I see the Category page is sorted by popular</span>
 							</div>
-				<div class="details">Step skipped</div>
+				<div class="details"></div>
 					</div>
 				</div>
 	</div>
 </div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">1</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">io.cucumber.java.PendingException</p>
-							<p class="duration text-sm">2 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>io.cucumber.java.PendingException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar skip-bg'>
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</div>
-									</td>
-									<td>18:29:26 PM</td>
-									<td class='linked' test-id='13'>
-										When I click the "View all Sations & Schedules" link
-										<div class="">
-											<span class="badge badge-default">Verify network station logos are displayed on the Stations page</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar skip-bg'>
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</div>
-									</td>
-									<td>18:29:39 PM</td>
-									<td class='linked' test-id='20'>
-										When I select Hip Hop,RnB & Dancehall Category
-										<div class="">
-											<span class="badge badge-default">Selecting the Hip Hop category from the Categories module on the Sounds Homepage</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
 					</div>
 				</li>
 			</ul>
@@ -416,13 +313,13 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'>
-						<b>0</b> features passed
+					<div><small data-tooltip='100%'>
+						<b>1</b> features passed
 						</small>
 					</div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> features failed, 
-						<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -439,10 +336,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='33.333%'><b>1</b> scenarios passed</small></div>
+					<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> scenarios failed, 
-						<b>2</b> skipped, <b data-tooltip='66.667%'>0</b> others
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -459,10 +356,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='53.846%'><b>7</b> steps passed</small></div>
+					<div><small data-tooltip='100%'><b>13</b> steps passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> steps failed, 
-						<b>6</b> skipped, <b data-tooltip='46.154%'>0</b> others
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -479,7 +376,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>.00%</span>
+							<span>100.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -498,7 +395,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">3</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>33.33%</span>
+							<span>100.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -514,7 +411,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Nov 12, 2022 06:28:40 PM</h4>
+							<h4 class="font-weight-light mt-4">Nov 13, 2022 12:46:50 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -530,7 +427,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 5s+720ms</h4>
+							<h4 class="font-weight-light mt-4">0h 1m 13s+635ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -561,40 +458,40 @@
 <script>
 	var statusGroup = {
 	    parentCount: 1,
-		passParent: 0,
+		passParent: 1,
 		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
-		skipParent: 1,
-		exceptionsParent: 1,
+		skipParent: 0,
+		exceptionsParent: 0,
 		childCount: 3,
-		passChild: 1,
+		passChild: 3,
 		failChild: 0,
 		fatalChild: 0,
 		errorChild: 0,
 		warningChild: 0,
-		skipChild: 2,
+		skipChild: 0,
 		infoChild: 0,
 		debugChild: 0,
-		exceptionsChild: 2,
+		exceptionsChild: 0,
 		grandChildCount: 13,
-		passGrandChild: 7,
+		passGrandChild: 13,
 		failGrandChild: 0,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
-		skipGrandChild: 6,
+		skipGrandChild: 0,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 6,
+		exceptionsGrandChild: 0,
 		eventsCount: 13,
-		passEvents: 7,
+		passEvents: 13,
 		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 6,
+		skipEvents: 0,
 		infoEvents: 0,
 		debugEvents: 0,
 		exceptionsEvents: 0
@@ -602,7 +499,7 @@
 </script>
 <script>
 	var timeline = {
-	        "Sounds Homepage":48.524
+	        "Sounds Homepage":56.716
 	};
 </script>
                 </div>

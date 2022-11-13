@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4205000000,
+              "duration": 4094000000,
               "status": "passed"
             },
             "line": 4,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-11-12T18:28:41.045Z",
+        "start_timestamp": "2022-11-13T12:46:51.397Z",
         "before": [
           {
             "result": {
-              "duration": 9746000000,
+              "duration": 8965000000,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 9820000000,
+              "duration": 5977000000,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6886000000,
+              "duration": 6748000000,
               "status": "passed"
             },
             "line": 7,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 301000000,
+              "duration": 400000000,
               "status": "passed"
             },
             "line": 8,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 498000000,
+              "duration": 213000000,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 397000000,
+              "duration": 152000000,
               "status": "passed"
             },
             "line": 10,
@@ -119,7 +119,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5792000000,
+              "duration": 3300000000,
               "status": "passed"
             },
             "line": 4,
@@ -132,11 +132,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-11-12T18:29:13.333Z",
+        "start_timestamp": "2022-11-13T12:47:18.205Z",
         "before": [
           {
             "result": {
-              "duration": 6944000000,
+              "duration": 2616000000,
               "status": "passed"
             },
             "match": {
@@ -151,7 +151,7 @@
         "after": [
           {
             "result": {
-              "duration": 6482000000,
+              "duration": 7229000000,
               "status": "passed"
             },
             "match": {
@@ -164,56 +164,37 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_click_the_link(steps.java:75)\r\n\tat ✽.I click the \"View all Sations \u0026 Schedules\" link(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:13)\r\n",
-              "duration": 762000000,
-              "status": "pending"
+              "duration": 337000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "I click the \"View all Sations \u0026 Schedules\" link",
+            "name": "I click the View all Sations \u0026 Schedules link",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"View all Sations \u0026 Schedules\"",
-                  "offset": 12
-                }
-              ],
-              "location": "stepDefinitions.steps.i_click_the_link(java.lang.String)"
+              "location": "stepDefinitions.steps.i_click_the_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 1854000000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "I am on the \"Stations\" page",
+            "name": "I am on the Stations page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Stations\"",
-                  "offset": 12
-                }
-              ],
-              "location": "stepDefinitions.steps.i_am_on_the_page(java.lang.String)"
+              "location": "stepDefinitions.steps.i_am_on_the_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 9819000000,
+              "status": "passed"
             },
             "line": 15,
-            "name": "I see 26 network station logos",
+            "name": "I see 26network station logos",
             "match": {
-              "arguments": [
-                {
-                  "val": "26",
-                  "offset": 6
-                }
-              ],
-              "location": "stepDefinitions.steps.i_see_network_station_logos(java.lang.Integer)"
+              "location": "stepDefinitions.steps.i_see_network_station_logos()"
             },
             "keyword": "And "
           }
@@ -228,7 +209,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3467000000,
+              "duration": 4206000000,
               "status": "passed"
             },
             "line": 4,
@@ -241,11 +222,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-11-12T18:29:34.218Z",
+        "start_timestamp": "2022-11-13T12:47:43.385Z",
         "before": [
           {
             "result": {
-              "duration": 2236000000,
+              "duration": 3170000000,
               "status": "passed"
             },
             "match": {
@@ -260,7 +241,7 @@
         "after": [
           {
             "result": {
-              "duration": 5782000000,
+              "duration": 5977000000,
               "status": "passed"
             },
             "match": {
@@ -273,9 +254,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category(steps.java:91)\r\n\tat ✽.I select Hip Hop,RnB \u0026 Dancehall Category(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:18)\r\n",
-              "duration": 10000000,
-              "status": "pending"
+              "duration": 4267000000,
+              "status": "passed"
             },
             "line": 18,
             "name": "I select Hip Hop,RnB \u0026 Dancehall Category",
@@ -286,26 +266,19 @@
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 3011000000,
+              "status": "passed"
             },
             "line": 19,
-            "name": "I am on \"Hip Hop,RnB \u0026 Dancehall\" Category page",
+            "name": "I am on Hip Hop,RnB \u0026 Dancehal Category page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Hip Hop,RnB \u0026 Dancehall\"",
-                  "offset": 8
-                }
-              ],
-              "location": "stepDefinitions.steps.i_am_on_Category_page(java.lang.String)"
+              "location": "stepDefinitions.steps.hiphopdancepage()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 20,
             "name": "I see the Category page is sorted by popular",

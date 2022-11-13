@@ -10,11 +10,12 @@ Feature: Sounds Homepage
     And  I can see the Radio2 logo
 
   Scenario: Verify network station logos are displayed on the Stations page
-    When I click the "View all Sations & Schedules" link
-    Then I am on the "Stations" page
-    And  I see 26 network station logos
+    When I click the View all Sations & Schedules link
+    Then I am on the Stations page
+    And  I see 26network station logos
 
   Scenario:Selecting the Hip Hop category from the Categories module on the Sounds Homepage
     When I select Hip Hop,RnB & Dancehall Category
-    Then I am on "Hip Hop,RnB & Dancehall" Category page
     And  I see the Category page is sorted by popular
+    Then I am on Hip Hop,RnB & Dancehal Category page
+

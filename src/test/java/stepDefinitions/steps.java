@@ -10,7 +10,9 @@ import io.cucumber.java.Before;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
@@ -69,36 +71,43 @@ public class steps {
         homPage.isListenLive();
         Assert.assertTrue(homPage.btnRadio2.isDisplayed());
     }
-    @When("I click the {string} link")
-    public void i_click_the_link(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @When("I click the View all Sations & Schedules link")
+    public void i_click_the_link()  {
+        homPage = new homePage(driver);
+        homPage.linkViewallStationSchedules.click();
     }
-    @Then("I am on the {string} page")
-    public void i_am_on_the_page(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("I am on the Stations page")
+    public void i_am_on_the_page() {
+        String actualtitle =driver.getTitle();
+        Assert.assertEquals(actualtitle, "BBC Sounds - Stations & Schedules");
     }
-    @Then("I see {int} network station logos")
-    public void i_see_network_station_logos(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("I see 26network station logos")
+    public void i_see_network_station_logos() throws InterruptedException {
+        java.util.List<WebElement> links = driver.findElements(By.tagName("a"));
+        System.out.println("Number of Links in the Page is " + links.size());
+
+        for (int i = 1; i<links.size(); i++) {
+            System.out.println("Name of Link# " + i + links.get(i).getText());
+        }
+        Thread.sleep(5000);
     }
 
     @When("I select Hip Hop,RnB & Dancehall Category")
-    public void i_select_Hip_Hop_RnB_Dancehall_Category() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void i_select_Hip_Hop_RnB_Dancehall_Category() throws InterruptedException {
+        homPage = new homePage(driver);
+        homPage.selectCategories();
     }
-    @Then("I am on {string} Category page")
-    public void i_am_on_Category_page(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("I am on Hip Hop,RnB & Dancehal Category page")
+    public void hiphopdancepage() throws InterruptedException {
+        Thread.sleep(3000);
+        String actualtitle =driver.getTitle();
+        System.out.println("the hip hop title is "+actualtitle);
+        Assert.assertEquals(actualtitle, "BBC Sounds - Categories - Hip Hop, RnB & Dancehall");
     }
     @Then("I see the Category page is sorted by popular")
     public void i_see_the_Category_page_is_sorted_by_popular() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+     homPage =  new homePage(driver);
+     //homPage.
     }
 
 

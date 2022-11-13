@@ -94,35 +94,34 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I click the \"View all Sations \u0026 Schedules\" link",
+  "name": "I click the View all Sations \u0026 Schedules link",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepDefinitions.steps.i_click_the_link(java.lang.String)"
+  "location": "stepDefinitions.steps.i_click_the_link()"
 });
 formatter.result({
-  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_click_the_link(steps.java:75)\r\n\tat ✽.I click the \"View all Sations \u0026 Schedules\" link(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:13)\r\n",
-  "status": "pending"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I am on the \"Stations\" page",
+  "name": "I am on the Stations page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinitions.steps.i_am_on_the_page(java.lang.String)"
+  "location": "stepDefinitions.steps.i_am_on_the_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I see 26 network station logos",
+  "name": "I see 26network station logos",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinitions.steps.i_see_network_station_logos(java.lang.Integer)"
+  "location": "stepDefinitions.steps.i_see_network_station_logos()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -158,18 +157,17 @@ formatter.match({
   "location": "stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category()"
 });
 formatter.result({
-  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat stepDefinitions.steps.i_select_Hip_Hop_RnB_Dancehall_Category(steps.java:91)\r\n\tat ✽.I select Hip Hop,RnB \u0026 Dancehall Category(file:///C:/Users/ssaib/Desktop/AutomationFramework/BBCSoundMusic/./features/SoundsHomePage.feature:18)\r\n",
-  "status": "pending"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I am on \"Hip Hop,RnB \u0026 Dancehall\" Category page",
+  "name": "I am on Hip Hop,RnB \u0026 Dancehal Category page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinitions.steps.i_am_on_Category_page(java.lang.String)"
+  "location": "stepDefinitions.steps.hiphopdancepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I see the Category page is sorted by popular",
@@ -179,7 +177,7 @@ formatter.match({
   "location": "stepDefinitions.steps.i_see_the_Category_page_is_sorted_by_popular()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
