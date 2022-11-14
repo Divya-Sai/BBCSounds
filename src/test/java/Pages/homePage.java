@@ -94,17 +94,19 @@ public class homePage {
 
     }
 
-    public void isSorted(){
+    public void isSorted() throws InterruptedException {
       //  ArrayList<String> obtainedList = new ArrayList<>();
         ArrayList<String>  obtainedList = new ArrayList<String>();
         List<WebElement> elementList= driver.findElements(By.xpath("(//ul[@class='sc-c-grid__grid gel-layout gel-layout--equal'])[4]"));
         for(WebElement we:elementList){
             obtainedList.add(we.getText());
+            Thread.sleep(3000);
             System.out.println("Obtained or original List is"+obtainedList);
         }
         ArrayList<String>  sortedList = new ArrayList();
         for(String s:obtainedList){
             sortedList.add(s);
+            Thread.sleep(3000);
             System.out.println("Sorted list is:: "+sortedList);
         }
         Collections.sort(sortedList);

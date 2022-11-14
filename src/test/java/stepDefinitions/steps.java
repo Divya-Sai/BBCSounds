@@ -105,7 +105,7 @@ public class steps {
         Assert.assertEquals(actualtitle, "BBC Sounds - Categories - Hip Hop, RnB & Dancehall");
     }
     @Then("I see the Category page is sorted by popular")
-    public void i_see_the_Category_page_is_sorted_by_popular() {
+    public void i_see_the_Category_page_is_sorted_by_popular() throws InterruptedException {
      homPage =  new homePage(driver);
      homPage.isSorted();
 
