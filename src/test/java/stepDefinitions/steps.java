@@ -79,6 +79,7 @@ public class steps {
     @Then("I am on the Stations page")
     public void i_am_on_the_page() {
         String actualtitle =driver.getTitle();
+        System.out.println("statio page"+actualtitle);
         Assert.assertEquals(actualtitle, "BBC Sounds - Stations & Schedules");
     }
     @Then("I see 26network station logos")
@@ -101,6 +102,7 @@ public class steps {
     public void hiphopdancepage() throws InterruptedException {
         Thread.sleep(3000);
         String actualtitle =driver.getTitle();
+        System.out.println("Category page"+actualtitle);
         System.out.println("the hip hop title is "+actualtitle);
         Assert.assertEquals(actualtitle, "BBC Sounds - Categories - Hip Hop, RnB & Dancehall");
     }
