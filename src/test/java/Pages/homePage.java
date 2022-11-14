@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -92,6 +93,22 @@ public class homePage {
         linkHipHopANDDancehall.click();
 
     }
-    
+
+    public void isSorted(){
+      //  ArrayList<String> obtainedList = new ArrayList<>();
+        ArrayList<String>  obtainedList = new ArrayList<String>();
+        List<WebElement> elementList= driver.findElements(By.xpath("(//ul[@class='sc-c-grid__grid gel-layout gel-layout--equal'])[4]"));
+        for(WebElement we:elementList){
+            obtainedList.add(we.getText());
+            System.out.println("Obtained or original List is"+obtainedList);
+        }
+        ArrayList<String>  sortedList = new ArrayList();
+        for(String s:obtainedList){
+            sortedList.add(s);
+            System.out.println("Sorted list is:: "+sortedList);
+        }
+        Collections.sort(sortedList);
+        Assert.assertTrue(sortedList.equals(obtainedList));
+    }
 
 }

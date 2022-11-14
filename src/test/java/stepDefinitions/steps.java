@@ -107,6 +107,7 @@ public class steps {
     @Then("I see the Category page is sorted by popular")
     public void i_see_the_Category_page_is_sorted_by_popular() {
      homPage =  new homePage(driver);
+     homPage.isSorted();
 
     }
 
